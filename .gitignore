@@ -1,0 +1,19 @@
+# Logs
+logs
+
+# node-waf configuration
+.lock-wscript
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+
+# next.js build output
+.next
+config/keys.js
