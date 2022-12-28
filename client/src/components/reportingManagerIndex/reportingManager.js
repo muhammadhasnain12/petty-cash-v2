@@ -65,15 +65,17 @@ class ReportingManager extends Component {
                     width: 150
                 })
             };
+            const { selectedItem } = this.state
             return (
                 <tr key={idx} onClick={() => this.setState({ selectedItem: row })} className="mt-3 pt-3">
                     <th scope="row">{row.empName}</th>
                     <td><span className="badge badge-primary p-2">{row.applicationStatus}</span></td>
                     <td>{row.empDesignation}</td>
                     <td>{row.amount}</td>
+                    {/* row._id === this.selectedItem._id? this.state.selectedOption : '' */}
                     <td>
                         <Select
-                            value={this.state.selectedOption}
+                            value={row._id === selectedItem._id? this.state.selectedOption : ''}
                             onChange={this.handleChange}
                             options={options}
                             styles={customStyles}
