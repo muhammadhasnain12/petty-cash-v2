@@ -36,9 +36,3 @@ app.use('/api/users', users);
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
-
-
-// create config/Keys.js and write these lines for connecting with mongodb
-// module.exports = {
-//     mongoURI: 'mongodb://localhost:27017/techgenix'
-// };
